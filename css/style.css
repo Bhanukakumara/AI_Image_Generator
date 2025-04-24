@@ -293,3 +293,28 @@ body.dark-theme h1 {
   cursor: pointer;
   background: transparent linear-gradient(135deg, #5c56e1, #8b5cf6);
 }
+
+body.dark-theme {
+  --color-card: #1e293b;
+  --color-input: #141b2d;
+  --color-text: #f3f4f6;
+  --color-placeholder: #a3b6dc;
+  --color-border: #334155;
+
+  background: var(--color-card);
+  background-image: radial-gradient(
+      circle at 15% 50%,
+      rgba(99, 102, 241, 0.15) 0%,
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 85% 30%,
+      rgba(139, 92, 246, 0.15) 0%,
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 50% 80%,
+      rgba(99, 102, 241, 0.1) 0%,
+      transparent 40%
+    );
+}
