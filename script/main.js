@@ -11,3 +11,8 @@ const ratioSelect = document.querySelector("#ratio-select");
 const gridGallery = document.querySelector(".gallery-grid");
 
 const API_KEY = "";
+
+const toggleTheme = () => {
+  const isDarkTheme = document.body.classList.toggle("dark-theme");
+  themeToggle.querySelector("i").className = isDarkTheme ? "fa-solid fa-sun" : "fa-solid fa-moon";
+};
